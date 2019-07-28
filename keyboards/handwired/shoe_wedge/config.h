@@ -23,9 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x0000
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    %YOUR_NAME%
+#define MANUFACTURER    WrongShoe
 #define PRODUCT         shoe_wedge
-#define DESCRIPTION     A custom keyboard
+#define DESCRIPTION     A quasi handwire keyboard
 
 /* key matrix size */
 #define MATRIX_ROWS 4
@@ -41,9 +41,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
 */
-#define MATRIX_ROW_PINS { D0, D5 }
-#define MATRIX_COL_PINS { F1, F0, B0 }
-#define UNUSED_PINS
+#define MATRIX_ROW_PINS { B6, F4, F1, F0 }
+#define MATRIX_COL_PINS { B1, B0, E6, F7, F6, F5, B7, C6, C7, B5, B4, D7, D6, D4 }
+#define UNUSED_PINS { D5, D3, D2, D1, D0, B2, B3}
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
@@ -51,7 +51,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
-#define SOFT_SERIAL_PIN D0 // or D1, D2, D3, E6
+// #define SOFT_SERIAL_PIN D0 // or D1, D2, D3, E6
 
 // #define BACKLIGHT_PIN B7
 // #define BACKLIGHT_BREATHING
